@@ -283,6 +283,12 @@
     }
 
     @media (min-width:768px){
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url(imagenes/f1.JPG);
+        background-size: cover;
+        background-attachment: fixed;
+      }
       .labe_menu{
         display: none;
       }
@@ -325,6 +331,8 @@
 
     @media(max-width: 480px){
       body {
+        font-family: Arial, sans-serif;
+        background-image: url(imagenes/f1.JPG);
         background-size: cover;
         background-attachment: fixed;
       }
