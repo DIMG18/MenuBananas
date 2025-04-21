@@ -1,0 +1,365 @@
+:root{
+  --color_primario: blue;
+  --color_primario_suave: purple;
+  --color_blanco: white;
+  --altura_header:80px;
+  --padding_left_right:2rem;
+  --ancho_maximo:1200px;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(imagenes/f1.JPG);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+  
+    h1{
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      color: black;
+    }
+    h2{
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        color: white;
+        white-space: normal !important;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+        display: block;
+      
+      
+    }
+    h3{
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      color: white;
+    }
+
+    th{
+        height: 40px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        color: white;
+        background-color: black;
+       
+      }
+      
+    td{
+      text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: white;
+        height: 25px;
+      }
+
+    
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 200px;
+        
+      }
+
+      .header{
+        width: 100%;
+        height: 80px;
+        background-color: black ;
+        position: fixed;
+      }
+
+      .navbar{
+          height: 100%;
+          display: flex;
+          width: min(100%, 100%);
+          margin: 0 auto;
+          justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 var(--padding_left_right);
+       
+        
+      }
+
+      .menu{
+        display: none;
+      }
+
+      .menu:checked + .ul_links{
+        height: calc(100vh - var(--altura_header));
+      }
+
+      .logo{
+        color: var(--color_blanco);
+      }
+
+      .list_icon{
+        color: var(--color_blanco);
+        cursor: pointer;
+      }
+
+      .ul_links{
+        width: 65%;
+        height: 100px;
+        background-color: orange;
+        position: absolute;
+        top: var(--altura_header);
+        right: 0;
+        left: auto;
+        height: 0;
+        overflow: hidden;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       padding-left: 1rem;
+       transition: all .5s;
+       z-index: 1000;
+       
+      }
+
+      .ul_links li a {
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+      }
+      
+
+    .ped {
+      height: 100px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      display: block;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .ped2 {
+      height: 85px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+  
+    .cont2{
+      padding-top: 100px;
+        width: 100%;
+        height:400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont3{
+        width: 100%;
+        height:1900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont4{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont5{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont6{
+        width: 100%;
+        height: 450px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont7{
+        width: 100%;
+        height: 250px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont8{
+      width: 100%;
+      height: 250px;
+      background-color: black;
+      display: flex;
+  }
+
+    table{
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      padding: 5px;
+      border-radius: 10px;
+     
+    }
+
+    .im{
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+     margin: 20px 20px 30px 30px;
+    }
+
+    .i{
+      width: auto;
+      height: 90%;
+      object-fit: cover;
+  
+    }
+
+    .im2{
+      width: 30%;
+      height: auto;
+      object-fit: cover;
+      margin: 25px;
+     
+    }
+
+    .P{
+      width: 250px;
+    }
+
+    .P2{
+      width: 100px;
+    }
+
+    .Q{
+      width: 33.3%;
+      height: 100px;
+      display: inline-block;
+      
+    }
+
+    .R{
+      margin-top: 10px;
+      text-align: center;
+      display: block;
+    }
+
+
+    .b {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+    }
+ 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    @media (min-width:768px){
+      .labe_menu{
+        display: none;
+      }
+      .ul_links{
+        position: static;
+        width: 90%;
+        height: 75px;
+        flex-direction: row;
+        gap: 1rem;
+      }
+      
+      .ped{
+        font-size: 16px;
+        padding: 20px 10px;
+      }
+
+      h1{font-size: 20px;}
+      h2{font-size: 25px;}
+      h3{font-size: 12px;}
+      th{font-size: 18px;}
+      td{font-size: 16px;}
+
+      .b{
+        font-size: 18px;
+      }
+
+      .Q{
+        width: 100%;
+        height: auto;
+      }
+      
+      .cont8{
+        height: 300px;
+      }
+
+      .im2{
+        max-width: 100px;
+      }
+    }
+
+    @media(max-width: 480px){
+      .ped{
+        font-size: 14px;
+        padding: 15px 5px;
+      }
+      th, td{
+        font-size: 14px;
+      }
+
+      .b{
+        font-size: 16px;
+      }
+
+      h1{font-size: 18px;}
+      h2,h3{font-size: 15px;}
+
+      .im{
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+        margin: 10px 20px 30px 20px;
+      }
+      
+      .im2{
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        margin: 25px;
+      }
+
+      .cont8{
+        height: 290px;
+      }
+
+    }
+
+  
+    
+   
+    
