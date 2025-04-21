@@ -324,6 +324,10 @@
     }
 
     @media(max-width: 480px){
+      body {
+        background-size: cover;
+        background-attachment: fixed;
+      }
       .ped{
         font-size: 14px;
         padding: 15px 5px;
